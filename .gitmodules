@@ -1,0 +1,4 @@
+[submodule "Eagle-and-KiCAD-Nixie-Libs"]
+	path = Eagle-and-KiCAD-Nixie-Libs
+	url = git@github.com:judge2005/Eagle-and-KiCAD-Nixie-Libs.git
+	branch = master
