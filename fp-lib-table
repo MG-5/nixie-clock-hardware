@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "extraFootprints")(type "KiCad")(uri "${KIPRJMOD}/extraFootprints.pretty")(options "")(descr ""))
+  (lib (name "nixies-us")(type "Legacy")(uri "${KIPRJMOD}/Eagle-and-KiCAD-Nixie-Libs/nixies-us.mod")(options "")(descr ""))
+)
