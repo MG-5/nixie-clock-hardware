@@ -43,12 +43,12 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_size_h": 0.7999999999999999,
+        "silk_text_size_v": 0.7999999999999999,
+        "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "starved_thermal|129725000|47000000|924fc430-eb90-4e53-91e6-1e9e2464014c|93f7f53c-af1b-47d6-9b7c-504401d0150a|B.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -88,7 +90,7 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "ignore",
@@ -117,7 +119,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -126,10 +128,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.44999999999999996,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -179,7 +181,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -469,7 +473,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 1.5,
         "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.15,
@@ -490,6 +494,18 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/Digit0": "190V",
+      "/Digit1": "190V",
+      "/Digit2": "190V",
+      "/Digit3": "190V",
+      "/Digit4": "190V",
+      "/Digit5": "190V",
+      "/Digit6": "190V",
+      "/Digit7": "190V",
+      "/Digit8": "190V",
+      "/Digit9": "190V",
+      "/LHDP": "190V",
+      "/RHDP": "190V",
       "/high-side-switch/Anode": "190V",
       "/high-side-switch/Dot": "190V",
       "/high-side-switch1/Anode": "190V",
@@ -504,8 +520,28 @@
       "/high-side-switch5/Dot": "190V",
       "/high-side-switch6/Anode": "190V",
       "/high-side-switch6/Dot": "190V",
+      "/low-side-switch-dp-left/Ghosting-Suppression": "190V",
+      "/low-side-switch/Ghosting-Suppression": "190V",
+      "/low-side-switch10/Cathode": "190V",
+      "/low-side-switch11/Cathode": "190V",
       "Net-(D1-A)": "190V",
       "Net-(D1-K)": "190V",
+      "Net-(Q10-C)": "190V",
+      "Net-(Q11-B)": "190V",
+      "Net-(Q12-C)": "190V",
+      "Net-(Q13-B)": "190V",
+      "Net-(Q2-C)": "190V",
+      "Net-(Q24-C)": "190V",
+      "Net-(Q25-C)": "190V",
+      "Net-(Q26-C)": "190V",
+      "Net-(Q27-B)": "190V",
+      "Net-(Q3-B)": "190V",
+      "Net-(Q4-C)": "190V",
+      "Net-(Q5-B)": "190V",
+      "Net-(Q6-C)": "190V",
+      "Net-(Q7-B)": "190V",
+      "Net-(Q8-C)": "190V",
+      "Net-(Q9-B)": "190V",
       "Vdrive": "190V"
     },
     "netclass_patterns": []
@@ -575,11 +611,41 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Name",
+          "name": "Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -701,11 +767,11 @@
     ],
     [
       "f11f603f-5edf-4568-8fb1-cb0d64f6e11a",
-      "low-side-switch10"
+      "low-side-switch-dp-left"
     ],
     [
-      "6d248b1b-0276-4b3e-a248-16812b240b0c",
-      "low-side-switch11"
+      "b74ab2d3-0dd6-4bd8-b26f-274d6693ad8c",
+      "low-side-switch-dp-right"
     ],
     [
       "a988fc59-9c26-44ca-bf88-2f1bc771a7b4",

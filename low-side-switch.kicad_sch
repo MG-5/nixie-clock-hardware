@@ -5,7 +5,7 @@
 	(uuid "82365186-dffe-4ef2-aea8-5da78db085ce")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:Q_NPN_BCE"
+		(symbol "Device:Q_NPN_EBC"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -20,7 +20,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BCE"
+			(property "Value" "Q_NPN_EBC"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, base/collector/emitter"
+			(property "Description" "NPN transistor, emitter/base/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +65,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_BCE_0_1"
+			(symbol "Q_NPN_EBC_0_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -126,11 +126,11 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BCE_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
+			(symbol "Q_NPN_EBC_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -146,9 +146,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
+					(at -5.08 0 0)
+					(length 5.715)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -164,9 +164,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "E"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -513,8 +513,54 @@
 		)
 		(uuid "d2952f41-1f82-4986-bb17-161c3d8c3d0f")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 171.45 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52da0368-9ad3-40cb-9fe0-82e518b1f9b9")
+		(property "Netclass" "190V"
+			(at 172.0596 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 185.42 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7966c6fd-3291-4dfb-bd35-06b7a3e17cf8")
+		(property "Netclass" "190V"
+			(at 186.0296 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_EBC")
 		(at 165.1 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -522,8 +568,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "71561ce5-61bf-495c-939d-718ed50aa74d")
-		(property "Reference" "Q15"
+		(uuid "8d0992d7-b780-4006-a2da-7829cf312f3e")
+		(property "Reference" "Q14"
 			(at 170.18 99.0599 0)
 			(effects
 				(font
@@ -532,7 +578,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "2N6517BU"
 			(at 170.18 101.5999 0)
 			(effects
 				(font
@@ -541,7 +587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Wide"
 			(at 170.18 97.79 0)
 			(effects
 				(font
@@ -550,7 +596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/2n6515-d.pdf"
 			(at 165.1 100.33 0)
 			(effects
 				(font
@@ -559,7 +605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, emitter/base/collector"
 			(at 165.1 100.33 0)
 			(effects
 				(font
@@ -567,64 +613,56 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "3"
-			(uuid "02622fbb-b185-49e7-bf28-1d2263714c80")
-		)
-		(pin "2"
-			(uuid "24e2b4b2-c36a-4838-8080-a4372759d586")
 		)
 		(pin "1"
-			(uuid "edf45b9c-c38f-41e0-9320-d6b114a0d189")
+			(uuid "0513d53e-72bd-48f2-83f9-bb02701dd2a2")
+		)
+		(pin "3"
+			(uuid "e82690da-0327-46aa-945a-279648e0c559")
+		)
+		(pin "2"
+			(uuid "709b4e80-37a3-4e84-92c4-d94ecd2b2d4a")
 		)
 		(instances
 			(project "nixie-clock"
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
-					(reference "Q15")
-					(unit 1)
-				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/58d4c860-da1d-472a-b89e-4f5c11c28069"
-					(reference "Q2")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
-					(reference "Q4")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
-					(reference "Q6")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
-					(reference "Q8")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
-					(reference "Q10")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
-					(reference "Q12")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
 					(reference "Q14")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
+					(reference "Q15")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
 					(reference "Q16")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
 					(reference "Q17")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/f11f603f-5edf-4568-8fb1-cb0d64f6e11a"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
 					(reference "Q18")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6d248b1b-0276-4b3e-a248-16812b240b0c"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
 					(reference "Q19")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
+					(reference "Q20")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
+					(reference "Q21")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
+					(reference "Q22")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+					(reference "Q23")
 					(unit 1)
 				)
 			)
@@ -639,7 +677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b79c618f-a624-4229-8e7e-5f09fe08fac2")
-		(property "Reference" "R38"
+		(property "Reference" "R44"
 			(at 180.34 93.98 90)
 			(effects
 				(font
@@ -655,7 +693,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 180.34 95.758 90)
 			(effects
 				(font
@@ -691,51 +729,43 @@
 		(instances
 			(project "nixie-clock"
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
-					(reference "R38")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
-					(reference "R40")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
-					(reference "R42")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
 					(reference "R44")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
 					(reference "R46")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
 					(reference "R48")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
 					(reference "R50")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
 					(reference "R52")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
 					(reference "R54")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/f11f603f-5edf-4568-8fb1-cb0d64f6e11a"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
 					(reference "R56")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6d248b1b-0276-4b3e-a248-16812b240b0c"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
 					(reference "R58")
 					(unit 1)
 				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+					(reference "R60")
+					(unit 1)
+				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/58d4c860-da1d-472a-b89e-4f5c11c28069"
-					(reference "R36")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -751,7 +781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8be4415-f326-4f3f-bd89-c329cc15f78b")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR062"
 			(at 167.64 114.3 0)
 			(effects
 				(font
@@ -801,51 +831,43 @@
 		(instances
 			(project "nixie-clock"
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
-					(reference "#PWR041")
+					(reference "#PWR062")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
-					(reference "#PWR042")
+					(reference "#PWR063")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
-					(reference "#PWR043")
+					(reference "#PWR064")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
-					(reference "#PWR044")
+					(reference "#PWR065")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
-					(reference "#PWR045")
+					(reference "#PWR066")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
-					(reference "#PWR046")
+					(reference "#PWR067")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
-					(reference "#PWR047")
+					(reference "#PWR068")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
-					(reference "#PWR048")
+					(reference "#PWR069")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
-					(reference "#PWR049")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/f11f603f-5edf-4568-8fb1-cb0d64f6e11a"
-					(reference "#PWR050")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6d248b1b-0276-4b3e-a248-16812b240b0c"
-					(reference "#PWR051")
+					(reference "#PWR070")
 					(unit 1)
 				)
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/58d4c860-da1d-472a-b89e-4f5c11c28069"
-					(reference "#PWR040")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -860,7 +882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebd1d908-e5dd-4411-9664-b35b406b4fe8")
-		(property "Reference" "R35"
+		(property "Reference" "R41"
 			(at 153.67 100.33 90)
 			(effects
 				(font
@@ -876,7 +898,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 153.67 102.108 90)
 			(effects
 				(font
@@ -912,51 +934,43 @@
 		(instances
 			(project "nixie-clock"
 				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/58d4c860-da1d-472a-b89e-4f5c11c28069"
-					(reference "R35")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
-					(reference "R37")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
-					(reference "R39")
-					(unit 1)
-				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
 					(reference "R41")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/26ca3393-4042-4258-a983-a953eb687fc9"
 					(reference "R43")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4"
 					(reference "R45")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/31a88152-31f5-4a37-b558-d330d1f1d969"
 					(reference "R47")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/21257856-8aad-49f8-8c31-b4e86dc4eca6"
 					(reference "R49")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/c905101c-92f7-4444-865b-ee71cb43079e"
 					(reference "R51")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/edf12ef7-fed8-4f76-90a4-104863964e32"
 					(reference "R53")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/f11f603f-5edf-4568-8fb1-cb0d64f6e11a"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/db8e2a42-b194-43f8-9014-5cf2726bc3c5"
 					(reference "R55")
 					(unit 1)
 				)
-				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6d248b1b-0276-4b3e-a248-16812b240b0c"
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/bcc3003e-5a4b-4a0d-9494-d9836d4017ba"
 					(reference "R57")
+					(unit 1)
+				)
+				(path "/ce257b15-bcae-43e8-9f21-6657b72a9b33/6427122d-ca8d-458b-94e4-2742fbb00f14"
+					(reference "R59")
 					(unit 1)
 				)
 			)
