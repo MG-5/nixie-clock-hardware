@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.09999999999999999,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,7 +24,7 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
@@ -43,9 +43,9 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.7999999999999999,
-        "silk_text_size_v": 0.7999999999999999,
-        "silk_text_thickness": 0.09999999999999999,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.8,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.0
@@ -59,6 +59,12 @@
         }
       ],
       "drc_exclusions": [
+        "missing_courtyard|128000000|100000000|439999c3-95f8-4076-a630-89a2b326f523|00000000-0000-0000-0000-000000000000",
+        "missing_courtyard|152000000|100000000|b9a400fa-cbae-4dbb-8031-0071872f1721|00000000-0000-0000-0000-000000000000",
+        "missing_courtyard|186000000|100000000|69f3d936-620e-40f4-b4e8-f4e0f647412a|00000000-0000-0000-0000-000000000000",
+        "missing_courtyard|210000000|100000000|0bac513d-1e60-4dd3-bb71-05289893cb18|00000000-0000-0000-0000-000000000000",
+        "missing_courtyard|70000000|100000000|b7c068cd-d4c4-462d-a18c-d3b1af852d40|00000000-0000-0000-0000-000000000000",
+        "missing_courtyard|94000000|100000000|6f2b9e25-385b-4b23-a236-7296d548c16c|00000000-0000-0000-0000-000000000000",
         "starved_thermal|129725000|47000000|924fc430-eb90-4e53-91e6-1e9e2464014c|93f7f53c-af1b-47d6-9b7c-504401d0150a|B.Cu"
       ],
       "meta": {
@@ -122,16 +128,16 @@
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.19999999999999998,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.15,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.44999999999999996,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.45,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -234,7 +240,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|3797300|1092200|16f83c02-80fa-463e-8a07-dbe4b699a8a8|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|3949700|1092200|46c1df48-11d2-4052-a908-8c5493d15a3f|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -493,57 +502,7 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/Digit0": "190V",
-      "/Digit1": "190V",
-      "/Digit2": "190V",
-      "/Digit3": "190V",
-      "/Digit4": "190V",
-      "/Digit5": "190V",
-      "/Digit6": "190V",
-      "/Digit7": "190V",
-      "/Digit8": "190V",
-      "/Digit9": "190V",
-      "/LHDP": "190V",
-      "/RHDP": "190V",
-      "/high-side-switch/Anode": "190V",
-      "/high-side-switch/Dot": "190V",
-      "/high-side-switch1/Anode": "190V",
-      "/high-side-switch1/Dot": "190V",
-      "/high-side-switch2/Anode": "190V",
-      "/high-side-switch2/Dot": "190V",
-      "/high-side-switch3/Anode": "190V",
-      "/high-side-switch3/Dot": "190V",
-      "/high-side-switch4/Anode": "190V",
-      "/high-side-switch4/Dot": "190V",
-      "/high-side-switch5/Anode": "190V",
-      "/high-side-switch5/Dot": "190V",
-      "/high-side-switch6/Anode": "190V",
-      "/high-side-switch6/Dot": "190V",
-      "/low-side-switch-dp-left/Ghosting-Suppression": "190V",
-      "/low-side-switch/Ghosting-Suppression": "190V",
-      "/low-side-switch10/Cathode": "190V",
-      "/low-side-switch11/Cathode": "190V",
-      "Net-(D1-A)": "190V",
-      "Net-(D1-K)": "190V",
-      "Net-(Q10-C)": "190V",
-      "Net-(Q11-B)": "190V",
-      "Net-(Q12-C)": "190V",
-      "Net-(Q13-B)": "190V",
-      "Net-(Q2-C)": "190V",
-      "Net-(Q24-C)": "190V",
-      "Net-(Q25-C)": "190V",
-      "Net-(Q26-C)": "190V",
-      "Net-(Q27-B)": "190V",
-      "Net-(Q3-B)": "190V",
-      "Net-(Q4-C)": "190V",
-      "Net-(Q5-B)": "190V",
-      "Net-(Q6-C)": "190V",
-      "Net-(Q7-B)": "190V",
-      "Net-(Q8-C)": "190V",
-      "Net-(Q9-B)": "190V",
-      "Vdrive": "190V"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -730,39 +689,39 @@
       "low-side-switch"
     ],
     [
-      "26ca3393-4042-4258-a983-a953eb687fc9",
+      "405c8dfa-aa44-4b06-b3e2-5c275b160ac2",
       "low-side-switch1"
     ],
     [
-      "3d2eaa1d-5ba4-4e6a-8096-33f700c25ee4",
+      "64bfee18-f7cb-4b24-9609-0f391cee8a67",
       "low-side-switch2"
     ],
     [
-      "31a88152-31f5-4a37-b558-d330d1f1d969",
+      "6d576474-1063-4288-9d12-4799785c4ed0",
       "low-side-switch3"
     ],
     [
-      "21257856-8aad-49f8-8c31-b4e86dc4eca6",
+      "8433f7e5-9930-4f10-b8a0-7b555bf3ff53",
       "low-side-switch4"
     ],
     [
-      "c905101c-92f7-4444-865b-ee71cb43079e",
+      "19f543d6-04b3-4aca-a291-78ab94ee9949",
       "low-side-switch5"
     ],
     [
-      "edf12ef7-fed8-4f76-90a4-104863964e32",
+      "4cb5c388-d568-4aee-b68d-360cfa0db082",
       "low-side-switch6"
     ],
     [
-      "db8e2a42-b194-43f8-9014-5cf2726bc3c5",
+      "04c44ae7-6464-48c2-ae43-04bc58577f3d",
       "low-side-switch7"
     ],
     [
-      "bcc3003e-5a4b-4a0d-9494-d9836d4017ba",
+      "06c35912-72e4-4085-954d-4c0e203c0533",
       "low-side-switch8"
     ],
     [
-      "6427122d-ca8d-458b-94e4-2742fbb00f14",
+      "150df97e-2711-464d-8647-731330091eab",
       "low-side-switch9"
     ],
     [
