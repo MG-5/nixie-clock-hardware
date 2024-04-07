@@ -499,7 +499,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber_led-bar",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
