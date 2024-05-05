@@ -685,7 +685,7 @@
 				)
 			)
 		)
-		(property "Value" "470k"
+		(property "Value" "220k"
 			(at 180.34 96.52 90)
 			(effects
 				(font

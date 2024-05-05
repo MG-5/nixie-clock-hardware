@@ -15430,7 +15430,7 @@
 		)
 		(uuid "a7af7b9c-7afd-4959-afac-d5ad4bc84b17")
 	)
-	(text "24V to 190V high voltage boost converter"
+	(text "24V to 177V high voltage boost converter"
 		(exclude_from_sim no)
 		(at 293.37 158.75 0)
 		(effects
@@ -18365,7 +18365,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "180k"
 			(at 396.24 124.46 0)
 			(effects
 				(font
@@ -21016,7 +21016,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "180k"
 			(at 381 124.46 0)
 			(effects
 				(font
@@ -24154,8 +24154,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n 250V"
-			(at 370.586 187.96 0)
+		(property "Value" "2x 220n 250V"
+			(at 369.57 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24424,7 +24424,7 @@
 				)
 			)
 		)
-		(property "Value" "HS1FFL"
+		(property "Value" "PMEG200G30ELPX"
 			(at 361.95 176.53 0)
 			(effects
 				(font
@@ -24441,7 +24441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.taiwansemi.com/assets/datasheet/pdf.php?pn=HS1FFL"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/916/PMEG200G30ELP-2634407.pdf"
 			(at 361.95 180.34 0)
 			(effects
 				(font
@@ -24776,7 +24776,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "5k1"
 			(at 369.57 209.55 0)
 			(effects
 				(font

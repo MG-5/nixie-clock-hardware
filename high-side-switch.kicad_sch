@@ -757,7 +757,7 @@
 		)
 		(uuid "e5bc8d29-69f1-4df5-89d6-900aca46f055")
 	)
-	(text "due multiplexing the pulse current \nshould be 6x 2.5mA -> 15mA"
+	(text "due multiplexing the pulse current \nshould be 6x 2.5mA -> 15mA\n\ntests shows: 2k2 -> 10mA"
 		(exclude_from_sim no)
 		(at 144.78 96.52 0)
 		(effects
@@ -1130,7 +1130,7 @@
 				)
 			)
 		)
-		(property "Value" "13k"
+		(property "Value" "2k2"
 			(at 121.92 96.52 90)
 			(effects
 				(font
