@@ -24424,7 +24424,7 @@
 				)
 			)
 		)
-		(property "Value" "PMEG200G30ELPX"
+		(property "Value" "ES1D"
 			(at 361.95 176.53 0)
 			(effects
 				(font
@@ -24441,7 +24441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/916/PMEG200G30ELP-2634407.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/es1d-d.pdf"
 			(at 361.95 180.34 0)
 			(effects
 				(font
