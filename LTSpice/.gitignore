@@ -1,0 +1,18 @@
+# Created by https://www.toptal.com/developers/gitignore/api/ltspice
+# Edit at https://www.toptal.com/developers/gitignore?templates=ltspice
+
+### LTspice ###
+# gitignore template for LTspice
+# website: https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html
+
+# Logfile
+*.log
+
+# Simulation Outputs
+*.raw
+*.fft
+
+# Netlist
+*.net
+
+# End of https://www.toptal.com/developers/gitignore/api/ltspice
