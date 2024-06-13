@@ -15347,7 +15347,7 @@
 	)
 	(text "FB-Voltage = 1.6V"
 		(exclude_from_sim no)
-		(at 379.73 204.47 0)
+		(at 367.03 201.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15442,6 +15442,16 @@
 			)
 		)
 		(uuid "ae225237-cd3c-4d59-b298-37d9c8f3f696")
+	)
+	(text "C24 has no 2220 footprint"
+		(exclude_from_sim no)
+		(at 381 194.31 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "afc5101e-abe9-4ca5-97c6-783eb685a453")
 	)
 	(text "pulse voltage: 190V\npulse current: max. 13mA\npulse current (commatas): max. 5mA"
 		(exclude_from_sim no)
@@ -24146,7 +24156,7 @@
 		(dnp no)
 		(uuid "ab9e336a-7057-442f-a219-120e15074dc8")
 		(property "Reference" "C24"
-			(at 377.19 182.88 0)
+			(at 372.11 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24154,8 +24164,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2x 220n 250V"
-			(at 369.57 189.23 0)
+		(property "Value" "2u2 250V"
+			(at 370.84 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
