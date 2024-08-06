@@ -15257,6 +15257,18 @@
 		)
 		(uuid "306eaf3a-cc1c-4137-ada9-30340000f951")
 	)
+	(text "caution: wrong wiring!"
+		(exclude_from_sim no)
+		(at 54.61 270.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify bottom)
+		)
+		(uuid "3856c863-2821-4913-8fa4-1fcaa3eb409a")
+	)
 	(text "Unless otherwise specified, the working voltage of all capacitors is 6.3V. "
 		(exclude_from_sim no)
 		(at 236.22 16.51 0)
