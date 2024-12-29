@@ -1,5 +1,10 @@
 # nixie-clock-hardware
-Hardware for controlling six Nixie IN-14 tubes as clock (HH:MM:SS) 
+Hardware for controlling six Nixie IN-14 tubes as clock (HH:MM:SS)
+
+
+![finished nixie clock](img/photo_2024-12-29_20-44-25.jpg "assembled nixie-clock")
+
+![finished nixie clock 2](img/photo_2024-12-29_20-44-27.jpg "assembled nixie-clock")
 
 ### Requirements for rev 1.0
 * efficient step-boost converter up to 190V
@@ -23,7 +28,7 @@ Hardware for controlling six Nixie IN-14 tubes as clock (HH:MM:SS)
 * ESD protection on ARGB connector has wrong wiring
   * workaround: do not use USBLC6 and add enameled copper wires
 
-### Pictures (rev 1.0)
+### Renderings (rev 1.0)
 
 ![pcb top](img/nixie-clock-top.jpg "nixie-clock PCB v1.0 top view")
 
